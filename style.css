@@ -1,0 +1,49 @@
+#box {
+    height: 250px;
+    width: 250px;
+    background-color: rgb(94, 170, 22);
+    font-size: 25px;
+    text-align: center;
+    border-color: black;
+    border: 3px solid;
+    translate: 0px -244px;
+}
+
+#box2{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(94, 170, 22);
+    font-size: 25px;
+    text-align: center;
+    border-color: black;
+    border: 3px solid;
+    translate: 270px -500px;
+}
+
+
+
+body{
+    font-family: Roboto Slab;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgb(44, 199, 44), rgb(53, 155, 53));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    font-weight: 2000;
+    
+}
+
+#Image{
+    background-image: url("Titelbild.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid;
+    border-color: black;
+    height: 250px;
+    width: 250px;
+    translate: 540px 11px;
+}
