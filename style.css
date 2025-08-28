@@ -1,49 +1,153 @@
-#box {
-    height: 250px;
-    width: 250px;
-    background-color: rgb(94, 170, 22);
+/*#boxbild{
+    height: 600px;
+    width: 1000px;
     font-size: 25px;
     text-align: center;
-    border-color: black;
-    border: 3px solid;
-    translate: 0px -244px;
-}
-
-#box2{
-    height: 250px;
-    width: 250px;
-    background-color: rgb(94, 170, 22);
+    margin: auto;
+    z-index: 100;
+    translate: 0 100px;
+}*/
+#box2 {
+    height: 600px;
+    width: 423px;
     font-size: 25px;
     text-align: center;
-    border-color: black;
-    border: 3px solid;
-    translate: 270px -500px;
-}
-
-
-
-body{
-    font-family: Roboto Slab;
-    color: rgb(0, 0, 0);
-    background: linear-gradient(to bottom, rgb(44, 199, 44), rgb(53, 155, 53));
+    margin: auto;
+    translate: 0 0 2;
+    z-index: -100;
+    background-image: url(BAck.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 
-h1{
-    font-weight: 2000;
-    
-}
-
-#Image{
-    background-image: url("Titelbild.jpg");
-    background-position: center;
+.Image2 {
+    background-image: url(BAck.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+
+    width: auto;
+    height: 600px;
+
+    display: block;
+
+    position: relative;
+
+    margin-top: 0;
+}
+
+h1 {
+    font-weight: 2000;
+    text-align: center;
+}
+
+
+body {
+    font-family: Roboto Slab;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgb(39, 184, 39), rgb(34, 173, 34));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Dropdown Button */
+    .btn {
+        background-color: #59a817;
+        color: rgb(0, 0, 0);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #59a817;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .btn:hover,
+    .dropdown:hover .btn {
+        background-color: #0b7dda;
+    }
+}
+
+.start {
+    float: left;
+    border-color: #000000;
+    border-width: 5px;
+    padding: 10px;
+
+    background-color: #44961f;
+}
+
+.start.Box {
+    width: 15%;
     border: 3px solid;
-    border-color: black;
-    height: 250px;
-    width: 250px;
-    translate: 540px 11px;
+    height: 200px;
+}
+
+.start.garnichts {
+    width: 15.5%;
+
+    background-color: #00000000;
+}
+
+.start.middle {
+    width: 30%;
+    height: 200px;
+    border: 3px solid
+}
+
+.start.BoxBild {
+    background-image: url("Titelbild.jpg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 200px;
+    border: 3px solid
+}
+
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .start.Box,
+    .start.BoxBild,
+    .start.garnichts {
+        width: 100%;
+    }
 }
